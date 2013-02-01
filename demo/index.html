@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Modulider jQuery plugin</title>
+
+	<link rel="stylesheet" href="css/demo.css">
+	<script src="../lib/jquery-1.7.js"></script>
+	<script src="../lib/jquery-ui-1.8.14.effects.js"></script>
+
+	<!-- Modulider -->
+	<link rel="stylesheet" href="../src/css/modulider.css">
+	<script src="../src/jquery.modulider-latest.js"></script>
+	<!-- -><script src="../../jquery.fn.transitions/transitions-latest.js"></script><!-- -->
+	<!-- -><script src="../src/jquery.modulider-plugins.js"></script><!-- -->
+	<script>
+		$(function (){
+			var start = jQuery.now();
+
+			/******************
+			 * DEV TRANSITION *
+			 ******************
+			 $.fn.modulider.transitions('raytraced', function (opts, next){
+				next.caption.css('display', 'none');
+				next.rayTraced(opts.speed, {
+					cols: 6,
+					rows: 4,
+					buckets: 4,
+					zIndex: 2
+				}, function (){
+					next.caption.slideDown(opts.speed / 4);
+				});
+			});
+			 */
+
+			window.slider = $('#slider1').modulider({
+				transition: 'random',
+				// randomList: ['fade'],
+				// autoplay: false,
+				// mouseOver: true,
+				speed: 1000,
+				delay: 4000,
+				easing: 'easeInCubic',
+				modules: {
+					/*preload: null, // '<div id="preload"><div></div></div>',
+					 navigation: {
+					 autoNav: true
+					 }*/
+				}
+			});
+
+			$('#render').text((jQuery.now() - start) + 'ms');
+		});
+	</script>
+	<script src="./js/dev.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<h1>Slider</h1>
+
+	<div id="slider1" class="slider default">
+		<div class="slides">
+			<div class="slide">
+				<a href="#"><img src="images/img1.jpg" alt="Slide 1"/></a>
+				<!-- test preload -> <img src="http://www.cg-auto.com.br/forum/gallery/image.php?album_id=4&image_id=130" alt="Slide 1" /> <!-- -->
+
+				<div class="caption">
+					<h1>Hi</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut ipsum ante, eu
+					venenatis lectus. Phasellus condimentum erat sit amet tortor varius faucibus.
+				</div>
+			</div>
+			<div class="slide">
+				<a href="http://google.com"><img src="images/img2.jpg" alt="Slide 2"/></a>
+
+				<div class="caption">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="slide">
+				<a href="#"><img src="images/img3.jpg" alt="Slide 3"/></a>
+
+				<div class="caption">
+					<img src="images/img3.jpg" alt="Slide 5"/>
+					<strong>image on caption</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slideText">
+					<h2>Without Caption.</h2>
+
+					<p>Image within the slide and style="display: none"</p>
+
+					<p>to create thumbnail and not display.</p>
+				</div>
+				<img src="images/img4.jpg" alt="Slide 4" style="display: none;"/>
+			</div>
+			<div class="slide">
+				<a href="#"><img src="images/img5.jpg" alt="Slide 5"/></a>
+
+				<div class="caption">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh
+					quam, sed placerat enim. Nunc pretium aliquet sapien, at vestibulum lacus aliquet eget. Proin
+					tincidunt vestibulum lectus, id mattis orci molestie non. Integer posuere.
+				</div>
+			</div>
+		</div>
+		<div class="navigation">
+			<!-- warning! if you choose manual thumbnails is need be in the same order and number of slides -->
+		</div>
+	</div>
+	<div id="controls">
+		<button class="prev">&laquo; prev</button>
+		<button class="pause">Pause</button>
+		<button class="play">Play</button>
+		<button class="next">next &raquo;</button>
+	</div>
+
+	<div id="monitor">
+		<ul>
+			<li>Render Time: <strong id="render">0</strong></li>
+			<li>Current: <strong id="current">0</strong></li>
+			<li>Next: <strong id="next">0</strong></li>
+			<li>Transitioning: <strong id="running"></strong></li>
+		</ul>
+		<ul>
+			<li><label for="transitions" class="option">Transition: </label><select id="transitions"></select></li>
+			<li><label for="delay" class="option">Delay: </label><input type="text" id="delay"/></li>
+			<li><label for="speed" class="option">Speed: </label><input type="text" id="speed"/></li>
+			<li><label for="mOver" class="option">MouseOver: </label><input type="checkbox" id="mOver"/></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
