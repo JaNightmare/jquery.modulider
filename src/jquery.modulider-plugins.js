@@ -3,8 +3,8 @@
 	 * jQuery Modulider - Debug plugin
 	 *
 	 * Version 0.2.3
-	 * Copyright José Almeida, http://joseafga.com.br
-	 * Creative Commons Attribution 3.0 Unported License, http://creativecommons.org/licenses/by/3.0/
+	 * Copyright José Almeida (http://joseafga.com.br)
+	 * Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
 	 *
 	 * Description:
 	 *  Simple debugger for log triggered events from Modulider
@@ -53,8 +53,8 @@
 	 * jQuery Modulider - Key Navigation plugin
 	 *
 	 * Version 0.1
-	 * Copyright José Almeida, http://joseafga.com.br
-	 * Creative Commons Attribution 3.0 Unported License, http://creativecommons.org/licenses/by/3.0/
+	 * Copyright José Almeida (http://joseafga.com.br)
+	 * Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
 	 *
 	 * Description:
 	 *  when press a key the corresponding function is performed
@@ -89,8 +89,8 @@
 	 * jQuery Modulider - Caption Hide plugin
 	 *
 	 * Version 0.1
-	 * Copyright José Almeida, http://joseafga.com.br
-	 * Creative Commons Attribution 3.0 Unported License, http://creativecommons.org/licenses/by/3.0/
+	 * Copyright José Almeida (http://joseafga.com.br)
+	 * Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
 	 *
 	 * Description:
 	 *
