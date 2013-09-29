@@ -4,6 +4,9 @@ License [Creative Commons Attribution 3.0 Unported License](http://creativecommo
 
 Easy, Fast, Extensible and Flexible Slider for jQuery
 
+## Demonstration:
+[jQuery Modulider Demo](http://janightmare.github.io/jquery.modulider/demo/)
+
 ## Tested and Working:
 * Internet Explorer 6, 7, 8, 9, 10
 * Firefox 3.6.8, 8.0, 9.0
