@@ -1,11 +1,11 @@
 # jQuery Modulider
-Copyright &copy; [José Almeida](http://joseafga.com.br) <br />
+Copyright &copy; [José Almeida](http://joseafga.com.br)
 License [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/ "License CC by 3.0")
 
 Easy, Fast, Extensible and Flexible Slider for jQuery
 
 ## Demonstration:
-[jQuery Modulider Demo](http://janightmare.github.io/jquery.modulider/demo/)
+[jQuery Modulider Demo](http://joseafga.github.io/jquery.modulider/demo/)
 
 ## Tested and Working:
 * Internet Explorer 6, 7, 8, 9, 10
