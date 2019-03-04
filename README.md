@@ -1,6 +1,6 @@
 # jQuery Modulider
 Copyright &copy; [José Almeida](http://joseafga.com.br)
-License [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/ "License CC by 3.0")
+License [MIT](LICENSE "MIT License")
 
 Easy, Fast, Extensible and Flexible Slider for jQuery
 
