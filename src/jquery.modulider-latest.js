@@ -3,7 +3,7 @@
  *
  * Version 0.11.0
  * Copyright José Almeida (http://joseafga.com.br)
- * Creative Commons Attribution 3.0 Unported License (http://creativecommons.org/licenses/by/3.0/)
+ * MIT License
  * 
  * Description: 
  *  Modular, Easy and Flexible Slider for jQuery
